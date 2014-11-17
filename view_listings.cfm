@@ -25,7 +25,7 @@
 <cfquery name="GetListing" datasource="#request.dsn#">
 	SELECT noticeid,county,	newspaper,	message_detail	,sale_date	,sale_time	,facility	,njpa_noticeid	,date_added	,archive	,date_printed
 	FROM public_notices
-	<!--- WHERE sale_date > '#DateFormat(DateAdd('d',-4,Now()),'yyyy-mm-dd')#' and archive = 0 --->
+	WHERE sale_date > '#DateFormat(DateAdd('d',-4,Now()),'yyyy-mm-dd')#' and archive = 0
 	ORDER BY sale_date
 </cfquery> 
 		
