@@ -204,27 +204,15 @@
 	
 </cfloop>
 
-<!--- 
-<cfquery name="GetListing" datasource="#request.dsn#">
-	SELECT * 
-	FROM public_notices
-</cfquery> 
-		
-<cfdump var="#GetListing#"> --->
+<cfmail to="tigeryan55@gmail.com,flagsplus@gmail.com" subject="Public Notces Run" from="jceci@sixfoottiger.com" type="html">
+	
+	Public notice script ran
+	
+</cfmail>
 
 
 <cfabort>
 
-
- 
-
-
-
-
-<!--- <cfif IsDefined("form")>
-<cfdump var="#form#">
-</cfif>
- --->
 
 
 
