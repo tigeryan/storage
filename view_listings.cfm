@@ -47,7 +47,7 @@
 			
 			<!--- <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Auction&dates=#DateFormat(GetListing.sale_date,'yyyymmdd')#T000000Z/#DateFormat(GetListing.sale_date,'yyyymmdd')#T050000Z&details=#HtmlEditFormat("http://www.publicnoticeads.com/NJ/search/view.asp?T=PN&id=#GetListing.njpa_noticeid#")#&location=Auction&trp=false&sprop=&sprop=name:" target="_blank"><img src="http://www.google.com/calendar/images/ext/gc_button1.gif" border=0></a><br /> --->
 			<a href="addtocalendar.cfm?noticeid=#GetListing.noticeid#">Add to Google Calendar</a><br />			
-			<a href="grab_listings.cfm?noticeid=#GetListing.noticeid#&action=archive">archive</a>			
+			<a href="view_listings.cfm?noticeid=#GetListing.noticeid#&action=archive">archive</a>			
 		</td>
 	</tr>	
 	</cfoutput>
