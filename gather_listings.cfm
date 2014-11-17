@@ -112,7 +112,7 @@
 					<cfset dateString = dateArray[1] />
 					<cfset dateString = REReplaceNoCase(dateString,"[rdsth]{2} of","","ALL") />
 					<cfset dateString = "#ListGetAt(dateString,2," ")# #ListGetAt(dateString,1," ")#" />
-					<cfset dateArray[1] = "#dateString#, 2012" />
+					<cfset dateArray[1] = "#dateString#, 2014" />
 				</cfif>
 
 				<cfif ArrayLen(dateArray) EQ 0>
@@ -120,7 +120,7 @@
 					<cfif ArrayLen(dateArray) GT 0>
 						THERE<br />
 						<cfset dateString = dateArray[1] />
-						<cfset dateArray[1] = "#dateString#, 2012" />
+						<cfset dateArray[1] = "#dateString#, 2014" />
 					</cfif>					
 				</cfif>
 
